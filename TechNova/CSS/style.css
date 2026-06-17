@@ -1,0 +1,231 @@
+#hero-img{
+    background-color: white;
+    background-image: url("../assets/image/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-top: 0;
+
+}
+body{
+    background-color: #000;
+    margin:0;
+
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 18px;
+}
+
+#company_name{
+    color: white;
+    background-color: #1887cc;
+    margin: 0;
+    height: 80px;
+    font-size: 60px;
+
+}
+#quote{
+    background-color: #1887cc;
+    margin:0;
+    color: rgb(255, 255, 6);
+    font-size: 23px;
+    height:35px
+
+}
+#nav{
+    
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #000000d2;
+    height: 35px;
+
+   display: flex;
+   
+  
+   
+
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 4px;
+   
+
+}
+#nav a:hover{
+     background-color: #183c77;
+     color: white;
+     border: 1px solid white
+
+    
+}
+
+.hero{
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    text-align: center;
+    color: white;
+    
+}
+
+.hero-text h1{
+    font-size:80px;
+    margin-top:200px;
+    
+}
+
+.hero-text h1{
+    font-size: 80px;
+    margin-bottom: 15px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+     border-right: 3px solid white;
+    width: 0;
+
+    animation:
+        typing1 4s steps(35, end) forwards,
+        blink 0.8s step-end 5,
+        hideCursor 0s 4s forwards;
+}
+
+.hero-text h2{
+    font-size: 60px;
+    margin-bottom: 15px;
+    border-right: 3px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    /* display: inline-block; */
+
+    width: 0;
+
+    animation: typing2 3s steps(30, end) forwards,
+    blink 0.8s step-end 5,
+    hideCursor 0s 4s forwards;
+    animation-delay: 4s;
+}
+
+
+@keyframes typing1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 35ch;
+    }
+}
+
+@keyframes typing2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 30ch;
+    }
+}
+
+@keyframes hideCursor{
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.hero-text p{
+    font-size: 24px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 7s;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width:30ch  
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+footer{
+    color: white;
+    background-color: black;
+    height: 210px;
+
+
+}
+
+
+footer h3{
+    
+    text-align: center;
+    margin: 0;
+    margin-bottom:10px ;
+    font-size: 30px ;
+}
+
+footer p{
+    margin-top:-10px;
+    text-align: center;
+    font-size:15px;
+    margin-bottom: 0px;
+}
+
+.data-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top:-10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:20px;
+    
+}
+
+.footer-links h4, .social-links h4{
+    margin-bottom: 10px;
+}
+
+.footer-links, .social-links{
+    display: flex;
+    flex-direction: column;
+    margin:0px 10px
+}
+
+.social-links a,.footer-links a{
+    color: white;
+    padding:2px 0px;
+    text-decoration: none ;
+    transition-duration: 0.4s;
+}
+
+.social-links a:hover,.footer-links a:hover{
+    color: blue;
+}
+
