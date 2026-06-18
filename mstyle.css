@@ -1,0 +1,85 @@
+body{
+    background-color: #FFF4E1;
+    margin:0px;
+}
+
+header{
+    background-color: #428475;
+    margin:0px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    margin: 0px;
+    font-size: 70px;
+    color: hsl(38, 76%, 73%);
+}
+
+.block{
+    background-color: #FFF4E1;
+    height: 500px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: #428475;
+    color:hsl(38, 76%, 73%);    
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+    transition: all .3s ease-in;
+    
+}
+
+.card a:hover{
+    transform: scale(1.2);
+
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap:150px;
+    position:relative;
+    
+
+}
+
+footer{
+    background-color: rgb(68,136,120);
+    color: #FFD58C;
+
+    text-align: center;
+    padding: 20px;
+ 
+}
+
+.footer-links{
+    margin: 15px 0;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover{
+    color: yellow;
+}
+
+.copyright{
+    color: white;
+    margin-top: 15px;
+}
