@@ -225,21 +225,115 @@ footer p{
     transition-duration: 0.4s;
 }
 
-/* Mobile Devices */
-@media (max-width: 768px) {
+/* ===================================
+   DESKTOP (1024px and above)
+=================================== */
+
+@media (min-width: 1024px){
 
     #company_name{
-        font-size: 35px;
+        font-size: 60px;
+    }
+
+    #quote{
+        font-size: 23px;
+    }
+
+    #nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-text h1{
+        font-size: 80px;
+    }
+
+    .hero-text h2{
+        font-size: 60px;
+    }
+
+    .hero-text p{
+        font-size: 24px;
+    }
+
+    .data-section{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* ===================================
+   TABLET (768px - 1023px)
+=================================== */
+
+@media (min-width:768px) and (max-width:1023px){
+
+    #company_name{
+        font-size: 45px;
         height: auto;
-        padding: 10px;
+        padding: 15px;
         text-align: center;
     }
 
     #quote{
-        font-size: 16px;
+        font-size: 18px;
         height: auto;
-        padding: 5px;
         text-align: center;
+    }
+
+    #nav{
+        justify-content: center;
+    }
+
+    .hero-text h1{
+        font-size: 55px;
+        margin-top: 120px;
+    }
+
+    .hero-text h2{
+        font-size: 40px;
+    }
+
+    .hero-text p{
+        font-size: 20px;
+    }
+
+    .data-section{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer{
+        height: auto;
+        padding: 20px;
+    }
+}
+
+
+/* ===================================
+   MOBILE (0px - 767px)
+=================================== */
+
+@media (max-width:767px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #company_name{
+        font-size: 30px;
+        height: auto;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #quote{
+        font-size: 14px;
+        height: auto;
+        text-align: center;
+        padding: 5px;
     }
 
     #nav{
@@ -255,23 +349,33 @@ footer p{
     }
 
     .hero{
-        height: auto;
-        min-height: 70vh;
+        min-height: 60vh;
         padding: 20px;
     }
 
     .hero-text h1{
         font-size: 32px;
         margin-top: 50px;
+
+        white-space: normal;
+        width: auto;
+        border-right: none;
+        animation: none;
     }
 
     .hero-text h2{
-        font-size: 24px;
+        font-size: 22px;
+
+        white-space: normal;
+        width: auto;
+        border-right: none;
+        animation: none;
     }
 
     .hero-text p{
         font-size: 16px;
-        padding: 0 10px;
+        opacity: 1;
+        animation: none;
     }
 
     .data-section{
@@ -289,13 +393,4 @@ footer p{
     footer h3{
         font-size: 24px;
     }
-
-    footer p{
-        font-size: 14px;
-    }
 }
-
-.social-links a:hover,.footer-links a:hover{
-    color: blue;
-}
-
